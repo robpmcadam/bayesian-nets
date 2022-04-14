@@ -46,15 +46,16 @@ class BayesianNet(ModelVI):
         **kwargs
     ):
         """
-        :param name:
-        :param model_type:
-        :param optimizer:
-        :param learning_rate:
-        :param n_outputs:
-        :param n_hidden_layers:
-        :param neurons_per_layer:
-        :param use_batchnorm:
-        :param kwargs:
+        params:
+            name: name of model
+            model_type: distribution head
+            optimizer: optimizer
+            learning_rate: optimizer learning rate
+            n_outputs: number of model outputs
+            n_hidden_layers: number of hidden layers
+            neurons_per_layer: number of neurons per layer
+            use_batchnorm: use batch normalization between layers
+            kwargs: keyword args passed to model
         """
         super().__init__(name=name, **kwargs)
         self.model_type = model_type
