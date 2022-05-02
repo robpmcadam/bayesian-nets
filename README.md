@@ -7,8 +7,8 @@ configurable, and powerful models.
 ## API overview
 
 #### Layers
-The `DenseVariational` class in `bayesian_modeling/layers.py` inherits from the base Keras `Layer
-` class and is the basic building block for the Bayesian models in this library.
+The `DenseVariational` class in `bayesian_modeling/layers.py` inherits from the base Keras `Layer`
+ class and is the basic building block for the Bayesian models in this library.
 
 The layer serves as a container for the prior on the parameters (by default a unit 2-dof Student-t
  ball
@@ -19,8 +19,8 @@ The layer serves as a container for the prior on the parameters (by default a un
 
 #### Models
 
-The `ModelVI` class in `bayesian_modeling/models.py` is a subclass of the base Keras `Model
-` class. It wraps variational inference specific logic into the `fit` method; namely, the number
+The `ModelVI` class in `bayesian_modeling/models.py` is a subclass of the base Keras `Model`
+ class. It wraps variational inference specific logic into the `fit` method; namely, the number
  of observations in the dataset is assigned to the variational layers in order to balance the
   complexity and accuracy terms that comprise the variational free energy during mini-batching.
   
